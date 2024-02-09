@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "id": "4a0d",
+      "fullname": "Noah",
+      "email": "jumper-gamer@outlook.com",
+      "password": "Hola123*"
+    },
+    {
+      "id": "9d68",
+      "fullname": "Noah",
+      "email": "jumper-gamer@outlook.com",
+      "password": "Hola123*"
+    },
+    {
+      "id": "68e4",
+      "fullname": "Pepe",
+      "email": "pepe@gmail.com",
+      "password": "12345"
+    }
+  ]
+}

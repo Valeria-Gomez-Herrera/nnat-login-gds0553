@@ -1,4 +1,4 @@
-<form [formGroup]="registerForm">
+<form [formGroup]="registerForm" (ngSubmit)="enviarUsuario()">
     <p-card header="Registrar Usuario" [style]="{width: '360px'}">
         <small *ngIf="fullname.invalid && (fullname.dirty || fullname.touched)" class="block p-error">
             <div *ngIf="fullname.hasError('required')">Ingresa tu Nombre</div>
@@ -29,10 +29,10 @@
             <p-password formControlName="confirmPassword" [toggleMask]="true" placeholder="Confirma la Contraseña" styleClass="w-full"></p-password>
         </div>
         
-        <p-button label="Ingresar" styleClass="w-full"></p-button>
+        <p-button type="submit" label="Registrar" styleClass="w-full"></p-button>
 
         <div class="mt-2">
-            ¿No tienes cuenta? <a routerLink="/register">Registrar</a>
+            ¿No tienes cuenta? <a routerLink="/ingresar">Registrar</a>
         </div>
     </p-card>
 </form>
