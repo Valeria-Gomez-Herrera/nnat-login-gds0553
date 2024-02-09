@@ -49,6 +49,7 @@ export class RegisterComponent {
     this.authService.registerUser(datos as User).subscribe(
       response => {
         this.messageService.add({ severity: 'info', summary: 'Registro Exitoso', detail: 'Ta bien :D' });
+        this.router.navigate(['login'])
       },
       error => {
         this.messageService.add({ severity: 'warn', summary: 'No se Registro', detail: 'Ta Mal D:' });
