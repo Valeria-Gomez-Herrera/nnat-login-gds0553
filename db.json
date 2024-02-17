@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": "4a0d",
+      "fullname": "Valeria",
+      "email": "valeria@gmail.com",
+      "password": "Hola123*"
+    },
+    {
+      "id": "68e4",
+      "fullname": "Pepe",
+      "email": "pepe@gmail.com",
+      "password": "12345"
+    },
+    {
+      "id": "f952",
+      "fullname": "Juan",
+      "email": "juan@e-mail.com",
+      "password": "cola"
+    },
+    {
+      "id": "210b",
+      "fullname": "Homero Sinson",
+      "email": "homer@hotmail.com",
+      "password": "12345"
+    }
+  ]
+}

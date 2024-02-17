@@ -1,0 +1,21 @@
+<form [formGroup]="loginForm" (ngSubmit)="login()">
+    <p-card header="Ingresar al Sistema" [style]="{width: '360px'}">
+        <small *ngIf="email.invalid && (email.dirty || email.touched)" class="block p-error">
+            <div *ngIf="email.hasError('required')">Ingresa Email</div>
+            <div *ngIf="email.hasError('email')">Email Incorrecto</div>
+        </small>
+        <div class="field">
+            <input type="text" pInputText formControlName="email" placeholder="Ingresa Email" class="w-full"/>
+        </div>
+
+        <div class="field">
+            <p-password formControlName="password" [toggleMask]="true" placeholder="Ingresa la Contraseña" styleClass="w-full"></p-password>
+        </div>
+        
+        <p-button type="submit" label="Ingresar" styleClass="w-full"></p-button>
+
+        <div class="mt-2">
+            ¿No tienes cuenta? <a routerLink="/register">Registrar</a>
+        </div>
+    </p-card>
+</form>
